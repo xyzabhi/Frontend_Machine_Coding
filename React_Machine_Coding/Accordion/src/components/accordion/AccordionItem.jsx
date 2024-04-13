@@ -8,7 +8,7 @@ const AccordionItem = ({ title, content, isOpen, onClick, isMultiple }) => {
       <div
         onClick={() => {
           if (isMultiple) {
-            setAccordionLevel(true);
+            setAccordionLevel(!accodrionLevel);
           } else {
             onClick();
           }
