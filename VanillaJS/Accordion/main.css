@@ -1,13 +1,19 @@
-.accordion-container {
-  width: 75%;
-  margin: auto 20px;
-  border: solid 2px black;
-  border-radius: 5px;
-  padding: 20px;
-  font-family: Arial, Helvetica, sans-serif;
+.accordion-item {
+  margin-bottom: 1rem;
 }
 
-.title {
-  font-size: 18px;
-  font-weight: bold;
+.accordion-header {
+  cursor: pointer;
+  background-color: #f4f4f4;
+  padding: 0.5rem;
+}
+
+.accordion-content {
+  display: none;
+  background-color: #ffffff;
+  padding: 0.5rem;
+}
+
+.accordion-item.open .accordion-content {
+  display: block;
 }
