@@ -16,7 +16,7 @@ const AccordionItem = ({ title, content, isOpen, onClick, isMultiple }) => {
       >
         <h3>{title}</h3>
       </div>
-      {isMultiple && accodrionLevel && content}
+      {(isOpen || (isMultiple && accodrionLevel)) && content}
       {!isMultiple && isOpen && content}
       <hr />
     </div>
